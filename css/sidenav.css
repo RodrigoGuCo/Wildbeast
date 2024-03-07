@@ -1,0 +1,51 @@
+.sidenav {
+  grid-area: sidenav;
+}
+
+.sidenav ul {
+  display: grid;
+  padding: 30px;
+  background: rgb(250, 251, 252);
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0px auto 30px;
+  padding: 20px;
+  padding-bottom: 13px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(44, 44, 44, 0.15) 5px 5px 15px 0px;
+  transition: all 0.1s ease-out 0s;
+}
+
+.sidenav li a:hover {
+  background: rgb(176, 125, 251);
+}
+
+@media (max-width: 760px) {
+  .sidenav {
+    overflow-x: auto;
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .sidenav ul {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 0px 30px;
+  }
+
+  .sidenav li a {
+    margin-bottom: 0px;
+  }
+}

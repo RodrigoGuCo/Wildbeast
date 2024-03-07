@@ -1,0 +1,124 @@
+.content {
+  grid-area: content;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-content: start;
+}
+
+.titulo {
+  align-self: start;
+}
+
+.titulo h1 {
+  color: #b07dfb;
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.titulo p {
+  color: #7b2fec;
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.caracteristicas {
+  display: flex;
+  align-self: flex-start;
+  gap: 30px;
+}
+
+.caracteristicas span {
+  display: block;
+}
+
+.caracteristicas div {
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+}
+
+.numero {
+  font-size: 3rem;
+  line-height: 1;
+  color: #b07dfb;
+  margin: 11px auto;
+}
+
+.rotulo {
+  background: #ffffff;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  color: #b07dfb;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005rem;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.destaque {
+  font-size: 0.875rem;
+  color: #7b2fec;
+  max-width: 235px;
+}
+
+.imagem-2,
+.imagem-3 {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.citacao {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.citacao p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ficha-tecnica {
+  padding: 30px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px;
+  grid-row: span 2;
+}
+
+.ficha-tecnica li {
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-family: "Courier", monospace;
+}
+
+.ficha-tecnica li:not(:last-child) {
+  border-bottom: 2px solid #b07dfb;
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+  grid-area: footer;
+  padding: 30px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.footer p{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.0005rem;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}

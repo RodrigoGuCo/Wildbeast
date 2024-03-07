@@ -1,0 +1,13 @@
+.advert {
+  grid-area: advert;
+  display: grid;
+  gap: 23px;
+  padding: 30px;
+  align-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  background: rgb(250, 251, 252);
+}
+
+.anuncio-item img {
+  border-radius: 5px;
+}
